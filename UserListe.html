@@ -3,10 +3,13 @@
 
 <head>
 
+
+
   <!-- Blank End -->
 <script type="text/javascript">
-$(document).ready(function () {
-$('#example').DataTable();
+
+document.addEventListener('DOMContentLoaded', function () {
+  let table = new DataTable('#example');
 });
 </script>
 
@@ -28,6 +31,7 @@ $('#example').DataTable();
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+<link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
@@ -196,10 +200,27 @@ $('#example').DataTable();
 
 
             <!-- Blank Start -->
+
+            <!-- Chart Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-12">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">Single Line Chart</h6>
+                            <canvas id="UserChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Chart End -->
+
+
+
             <div class="container-fluid pt-4 px-4">
                 <div class="row vh-100 bg-secondary rounded   mx-0">
                     <div class="col-md-12">
-<h1>Nutzerliste</h1>
+
+                      <h1>Nutzerliste</h1>
 
                       <div class="table-responsive">
                                                       <table id="example" class="table  table-striped table-bordered">
@@ -245,6 +266,94 @@ $('#example').DataTable();
                                                                   <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
                                                               </tr>
 
+                                                              <tr>
+                                                                  <th scope="row">1</th>
+                                                                  <td>Beispiel</td>
+                                                                  <td>Beispiel</td>
+                                                                  <td>beispielemail@example.com</td>
+                                                                  <td>Beispielland</td>
+                                                                  <td>Nuter oder Admin</td>
+                                                                  <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                              </tr>
+
+                                                              <tr>
+                                                                  <th scope="row">1</th>
+                                                                  <td>Beispiel</td>
+                                                                  <td>Beispiel</td>
+                                                                  <td>beispielemail@example.com</td>
+                                                                  <td>Beispielland</td>
+                                                                  <td>Nuter oder Admin</td>
+                                                                  <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <th scope="row">1</th>
+                                                                  <td>Beispiel</td>
+                                                                  <td>Beispiel</td>
+                                                                  <td>beispielemail@example.com</td>
+                                                                  <td>Beispielland</td>
+                                                                  <td>Nuter oder Admin</td>
+                                                                  <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <th scope="row">1</th>
+                                                                  <td>Beispiel</td>
+                                                                  <td>Beispiel</td>
+                                                                  <td>beispielemail@example.com</td>
+                                                                  <td>Beispielland</td>
+                                                                  <td>Nuter oder Admin</td>
+                                                                  <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                              </tr>            <tr>
+                                                                              <th scope="row">1</th>
+                                                                              <td>Beispiel</td>
+                                                                              <td>Beispiel</td>
+                                                                              <td>beispielemail@example.com</td>
+                                                                              <td>Beispielland</td>
+                                                                              <td>Nuter oder Admin</td>
+                                                                              <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                                          </tr>            <tr>
+                                                                                          <th scope="row">1</th>
+                                                                                          <td>Beispiel</td>
+                                                                                          <td>Beispiel</td>
+                                                                                          <td>beispielemail@example.com</td>
+                                                                                          <td>Beispielland</td>
+                                                                                          <td>Nuter oder Admin</td>
+                                                                                          <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                                                      </tr>            <tr>
+                                                                                                      <th scope="row">1</th>
+                                                                                                      <td>Beispiel</td>
+                                                                                                      <td>Beispiel</td>
+                                                                                                      <td>beispielemail@example.com</td>
+                                                                                                      <td>Beispielland</td>
+                                                                                                      <td>Nuter oder Admin</td>
+                                                                                                      <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                                                                  </tr>            <tr>
+                                                                                                                  <th scope="row">1</th>
+                                                                                                                  <td>Beispiel</td>
+                                                                                                                  <td>Beispiel</td>
+                                                                                                                  <td>beispielemail@example.com</td>
+                                                                                                                  <td>Beispielland</td>
+                                                                                                                  <td>Nuter oder Admin</td>
+                                                                                                                  <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                                                                              </tr>            <tr>
+                                                                                                                              <th scope="row">1</th>
+                                                                                                                              <td>Beispiel</td>
+                                                                                                                              <td>Beispiel</td>
+                                                                                                                              <td>beispielemail@example.com</td>
+                                                                                                                              <td>Beispielland</td>
+                                                                                                                              <td>Nuter oder Admin</td>
+                                                                                                                              <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                                                                                          </tr>
+
+                                                              <tr>
+                                                                  <th scope="row">1</th>
+                                                                  <td>Beispiel</td>
+                                                                  <td>Beispiel</td>
+                                                                  <td>beispielemail@example.com</td>
+                                                                  <td>xxxx</td>
+                                                                  <td>Nutzer oder Admin</td>
+                                                                  <td><button type="button" class="btn btn-danger m-2">Löschen</button><button type="button" class="btn btn-info m-2">Bearbeiten</button></td>
+                                                              </tr>
+
                                                           </tbody>
                                                       </table>
                                                   </div>
@@ -261,6 +370,21 @@ $('#example').DataTable();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded-top p-4">
@@ -269,7 +393,6 @@ $('#example').DataTable();
                             &copy; <a href="#">Your Site Name</a>, All Right Reserved.
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By <a href="https://htmlcodex.com">HTML Codex</a>
                             <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
                         </div>
@@ -285,10 +408,15 @@ $('#example').DataTable();
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/chart/chart.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -297,6 +425,41 @@ $('#example').DataTable();
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+  // Worldwide Sales Chart
+  var ctx1 = $("#UserChart").get(0).getContext("2d");
+  var myChart1 = new Chart(ctx1, {
+      type: "bar",
+      data: {
+          labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+          datasets: [{
+                  label: "USA",
+                  data: [15, 30, 55, 65, 60, 80, 95],
+                  backgroundColor: "rgba(235, 22, 22, .7)"
+              },
+              {
+                  label: "UK",
+                  data: [8, 35, 40, 60, 70, 55, 75],
+                  backgroundColor: "rgba(235, 22, 22, .5)"
+              },
+              {
+                  label: "AU",
+                  data: [12, 25, 45, 55, 65, 70, 60],
+                  backgroundColor: "rgba(235, 22, 22, .3)"
+              }
+          ]
+          },
+      options: {
+          responsive: true
+      }
+  });
+
+</script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
